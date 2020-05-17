@@ -1,6 +1,6 @@
 namespace starterkit {
     /**
-     * reacts with P1
+     * sets true so you can put stuff into IF statments
      */
     //% blockId=starterkitbutton block="Button P1"
     export function button(P1 = 1): Boolean {
