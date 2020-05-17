@@ -64,4 +64,13 @@ namespace starterkit {
     export function temp(): any {
         
     }
+
+    /**
+     * uses the temp sensor to sence the temp, is a block, P0
+     */
+    //% group="Tempature"
+    //% blockId=starterkittempblock block="Temp in ℉"
+    export function tempblock(): void {
+        
+    }
 }
