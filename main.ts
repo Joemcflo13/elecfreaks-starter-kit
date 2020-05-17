@@ -1,6 +1,7 @@
 /// <reference no-default-lib="true"/>
 //% weight=12 color=#b22222 icon="\uf120"
 //% groups='["Buttons", "Dial", "LEDs", "Tempature"]'
+//% advanced=true
 namespace starterkit {
 
     /**
