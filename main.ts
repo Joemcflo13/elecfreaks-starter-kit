@@ -50,6 +50,9 @@ namespace starterkit {
     //%group="Dial"
     //% blockId=starterkitdial block="Dial screen"
     export function dial(): void {
-        
+        led.plotBarGraph(
+    pins.analogReadPin(AnalogPin.P0),
+    1023
+    )
     }
 }
