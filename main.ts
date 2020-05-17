@@ -27,4 +27,15 @@ namespace starterkit {
     export function rgb(red: number, green: number, blue: number): void {
         
     }
+    /**
+     * uses the trimpot to plot the screen
+     */
+    //% weight=57
+    //% buttonId=starterkittrimpot button="trimpot P0"
+    export function trimpot(): void {
+        led.plotBarGraph(
+            pins.analogReadPin(AnalogPin.P0),
+            1023
+        )
+    }
 }
