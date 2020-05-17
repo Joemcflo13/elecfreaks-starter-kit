@@ -1,6 +1,6 @@
 /// <reference no-default-lib="true"/>
 //% weight=12 color=#b22222 icon="\uf120"
-//% groups='["Buttons", "Trimpot", "LEDs"]'
+//% groups='["Buttons", "Dial", "LEDs"]'
 namespace starterkit {
     /**
      * sets true so you can put stuff into IF statments
@@ -8,7 +8,7 @@ namespace starterkit {
     //% weight=96
     //% blockId=starterkitbutton block="Button P1"
     //% group="Buttons"
-    export function button(AnalogPin.P1 = 1): Boolean {
+    export function button(P1 = 1): Boolean {
         true
         return true
     }
@@ -37,17 +37,17 @@ namespace starterkit {
     /**
      * uses the trimpot to plot the screen with P0
      */
-    //% group="Trimpot"
-    //% buttonId=starterkittrimpot button="trimpot"
-    export function trimpot(): void {
+    //% group="Dial"
+    //% buttonId=starterkitDial button="Dial"
+    export function Dial(): void {
         led.plotBarGraph(
         pins.analogReadPin(AnalogPin.P0),
         1023
     )
     }
-    //% button="rimpot" buttonId=starterkittrimpottest
-    //% group="Trimpot"
-    export function trimpottest(): void {
+    //% button="Dail" buttonId=starterkitDail
+    //% group="Dial"
+    export function Dail(): void {
         
     }
 
