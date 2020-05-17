@@ -28,10 +28,9 @@ namespace starterkit {
         
     }
     /**
-     * uses the trimpot to plot the screen
+     * uses the trimpot to plot the screen with P0
      */
-    //% weight=57
-    //% buttonId=starterkittrimpot button="trimpot P0"
+    //% buttonId=starterkittrimpot button="trimpot"
     export function trimpot(): void {
         led.plotBarGraph(
             pins.analogReadPin(AnalogPin.P0),
