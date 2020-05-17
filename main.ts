@@ -1,6 +1,6 @@
 /// <reference no-default-lib="true"/>
 //% weight=12 color=#b22222 icon="\uf120"
-//% groups='["Buttons", "Dial", "LEDs"]'
+//% groups='["Buttons", "Dial", "LEDs", "Temp"]'
 namespace starterkit {
     /**
      * sets true so you can put stuff into IF statments
@@ -54,5 +54,14 @@ namespace starterkit {
     pins.analogReadPin(AnalogPin.P0),
     1023
     )
+    }
+
+    /**
+     * uses the temp sensor to sence the temp, P0
+     */
+    //% group="Temp"
+    //% blockId=starterkittemp block="Temp in ℉"
+    export function temp(): any {
+        
     }
 }
