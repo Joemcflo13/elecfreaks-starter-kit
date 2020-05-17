@@ -9,9 +9,10 @@ namespace starterkit {
     //% weight=96
     //% blockId=starterkitbutton block="Button P1"
     //% group="Buttons"
-    export function button(P1 = 1): Boolean {
+    export function button(P1 = 1): any {
         true
         return true
+        return 1
     }
 
     /**
