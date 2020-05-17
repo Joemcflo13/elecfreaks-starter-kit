@@ -35,28 +35,21 @@ namespace starterkit {
     }
 
     /**
-     * uses the trimpot to plot the screen with P0
-     */
-    //% group="Dial"
-    //% buttonId=starterkitDial button="Dial"
-    export function Dial(): any {
-        led.plotBarGraph(
-        pins.analogReadPin(AnalogPin.P0),
-        1023
-    )
-    }
-    //% button="Dail" buttonId=starterkitDail
-    //% group="Dial"
-    export function Dail(): any {
-        
-    }
-
-    /**
-     * selflock switch onstart
+     * selflock switch onstart, uses P2 
      */
     //% group="Buttons"
     //% blockId=starterkitbuswi block="self-lock switch up"
     export function buswi(): void {
+        pins.setEvents(DigitalPin.P2, PinEventType.Edge)
+        pins.setPull(DigitalPin.P2, PinPullMode.PullUp)
+    }
+
+    /**
+     * uses the dial to plot the screen
+     */
+    //%group="Dial"
+    //% blockId=starterkitdial block="Dial screen"
+    export function dial(): void {
         
     }
 }
