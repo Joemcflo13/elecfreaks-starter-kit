@@ -57,20 +57,36 @@ namespace starterkit {
     }
 
     /**
-     * uses the temp sensor to sence the temp, P0
+     * uses the temp sensor to sence the temp, P4
      */
     //% group="Tempature"
     //% blockId=starterkittemp block="Temp in ℉"
     export function temp(): any {
-        
+        let vol = pins.map(
+        pins.analogReadPin(AnalogPin.P4),
+        0,
+        1023,
+        0,
+        3300
+        )
+        let tem = (vol - 500) / 10
+        let far = tem * (9 / 5) + 32
     }
 
     /**
-     * uses the temp sensor to sence the temp, is a block, P0
+     * uses the temp sensor to sence the temp, is a block, P4
      */
     //% group="Tempature"
     //% blockId=starterkittempblock block="Temp in ℉"
     export function tempblock(): void {
-        
+        let vol = pins.map(
+        pins.analogReadPin(AnalogPin.P4),
+        0,
+        1023,
+        0,
+        3300
+        )
+        let tem = (vol - 500) / 10
+        let far = tem * (9 / 5) + 32
     }
 }
