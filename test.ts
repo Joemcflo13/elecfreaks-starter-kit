@@ -1,1 +1,6 @@
-// tests go here; this will not be compiled when this package is used as an extension.
+starterkit.buttonsetup()
+basic.forever(function () {
+    if (starterkit.button()) {
+        starterkit.rgb(1, 0, 0)
+    }
+})

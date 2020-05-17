@@ -10,6 +10,7 @@ namespace starterkit {
         true
         return true
     }
+
     /**
      * the setup for a button
      */
@@ -18,6 +19,7 @@ namespace starterkit {
     export function buttonsetup(): void {
         pins.P1; PinPullMode.PullUp
     }
+
     /**
      * sets the rgb lights to any color
      */
@@ -27,14 +29,20 @@ namespace starterkit {
     export function rgb(red: number, green: number, blue: number): void {
         
     }
+
     /**
      * uses the trimpot to plot the screen with P0
      */
     //% buttonId=starterkittrimpot button="trimpot"
     export function trimpot(): void {
-        led.plotBarGraph(
-            pins.analogReadPin(AnalogPin.P0),
-            1023
-        )
+        
+    }
+
+    /**
+     * selflock switch onstart
+     */
+    //% blockId=starterkitbuswi block="self-lock switch up"
+    export function buswi(): void {
+        
     }
 }

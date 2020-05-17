@@ -1,6 +1,20 @@
 
 > Open this page at [https://joemcflo13.github.io/elecfreaks-starter-kit/](https://joemcflo13.github.io/elecfreaks-starter-kit/)
 
+## Usage
+
+### ``self-lock switch up``
+
+
+```blocks
+starterkit.buttonsetup()
+basic.forever(function () {
+    if (starterkit.button()) {
+        starterkit.rgb(1, 0, 0)
+    }
+})
+```
+
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
@@ -17,13 +31,6 @@ To edit this repository in MakeCode.
 * open [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * click on **Import** then click on **Import URL**
 * paste **https://github.com/joemcflo13/elecfreaks-starter-kit** and click import
-
-## Blocks preview
-
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
-
-![A rendered view of the blocks](https://github.com/joemcflo13/elecfreaks-starter-kit/raw/master/.github/makecode/blocks.png)
 
 #### Metadata (used for search, rendering)
 
