@@ -1,5 +1,5 @@
 /// <reference no-default-lib="true"/>
-//% weight=12 color=#002050 icon="\uf140
+//% weight=12 color=#b22222 icon="\uf120"
 namespace starterkit {
     /**
      * sets true so you can put stuff into IF statments
