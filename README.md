@@ -5,6 +5,7 @@
 
 ### ``self-lock switch up``
 
+use the block ``self-lock switch up`` to set up the selflock button
 
 ```blocks
 starterkit.buttonsetup()
