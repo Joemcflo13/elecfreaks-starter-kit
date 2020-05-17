@@ -1,5 +1,5 @@
 
-> Open this page at [https://joemcflo13.github.io/elecfreaks-starter-kit/](https://joemcflo13.github.io/elecfreaks-starter-kit/)
+> Open this page at [https://joemcflo13.github.io/elecfreaks-starter-kit/](https://joemcflo13.github.io/elecfreaks-starter-kit/) and tell others!
 ## Be aware!
 when using the ``Temp in ℉`` blocks in the starterkit, you MUST make these variables: vol, tem, far. Thanks
 
