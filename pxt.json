@@ -1,5 +1,6 @@
 {
     "name": "expantion pack",
+    "version": "0.1.0",
     "description": "",
     "dependencies": {
         "core": "*",
