@@ -39,7 +39,7 @@ namespace starterkit {
      */
     //% group="Dial"
     //% buttonId=starterkitDial button="Dial"
-    export function Dial(): void {
+    export function Dial(): any {
         led.plotBarGraph(
         pins.analogReadPin(AnalogPin.P0),
         1023
@@ -47,7 +47,7 @@ namespace starterkit {
     }
     //% button="Dail" buttonId=starterkitDail
     //% group="Dial"
-    export function Dail(): void {
+    export function Dail(): any {
         
     }
 
