@@ -37,13 +37,18 @@ namespace starterkit {
     /**
      * uses the trimpot to plot the screen with P0
      */
-    //% group="trimpot"
+    //% group="Trimpot"
     //% buttonId=starterkittrimpot button="trimpot"
     export function trimpot(): void {
         led.plotBarGraph(
         pins.analogReadPin(AnalogPin.P0),
         1023
     )
+    }
+    //% button="rimpot" buttonId=starterkittrimpottest
+    //% group="Trimpot"
+    export function trimpottest(): void {
+        
     }
 
     /**
