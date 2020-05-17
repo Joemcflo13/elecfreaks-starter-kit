@@ -4,8 +4,7 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*",
-        "pxt-sonar": "github:microsoft/pxt-sonar#v0.0.5"
+        "radio": "*"
     },
     "files": [
         "main.ts",
