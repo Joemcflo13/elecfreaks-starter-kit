@@ -1,17 +1,18 @@
 namespace starterkit {
     /**
-     * reacts with P2
+     * reacts with P1
      */
-    //% blockId=starterkitbutton block="Button P2"
-    export function button(DigitalPin.P2: 0): Boolean {
-            set.true
+    //% blockId=starterkitbutton block="Button P1"
+    export function button(P1 = 1): Boolean {
+            true
+            return true
     }
     /**
      * the setup for a button
      */
-    //% blockId=starterkitbuttonsetup block="Button setup P2"
+    //% blockId=starterkitbuttonsetup block="Button setup P1"
     export function buttonsetup(): void {
-        pins.P2; PinPullMode.PullUp
+        pins.P1; PinPullMode.PullUp
     }
 
 }
