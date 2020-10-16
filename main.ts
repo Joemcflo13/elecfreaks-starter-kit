@@ -1,4 +1,26 @@
-/// <reference no-default-lib="true"/>
+enum PinDigitalWrite {
+    //% block=p1
+    P1 = DigitalPin.P1,
+    //% block=p2
+    P2 = DigitalPin.P2,
+    //% block=p0
+    P0 = DigitalPin.P0,
+    //% block=green
+    Green = 0x00FF00,
+    //% block=blue
+    Blue = 0x0000FF,
+    //% block=indigo
+    Indigo = 0x4b0082,
+    //% block=violet
+    Violet = 0x8a2be2,
+    //% block=purple
+    Purple = 0xFF00FF,
+    //% block=white
+    White = 0xFFFFFF,
+    //% block=black
+    Black = 0x000000
+}
+
 //% weight=12 color=#b22222 icon="\uf120"
 //% groups='["Buttons", "Dial", "LEDs", "Tempature"]'
 //% advanced=true
@@ -8,7 +30,7 @@ namespace starterkit {
      * sets true so you can put stuff into IF statments
      */
     //% weight=96
-    //% blockId=starterkitbutton block="Button P1"
+    //% blockId=starterkitbutton block="Button %PinDigitalWrite"
     //% group="Buttons"
     export function button(P1 = 1): any {
         true
@@ -64,6 +86,7 @@ namespace starterkit {
      */
     //% group="Tempature"
     //% blockId=starterkittemp block="Temp in ℉"
+    //% advanced=true
     export function temp(): any {
         let vol = pins.map(
         pins.analogReadPin(AnalogPin.P4),
